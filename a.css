@@ -1,0 +1,22 @@
+body{
+ display: flex;
+ justify-content: center;
+ align-items: center; 
+ min-height: 100vh;
+ background-color: skyblue;
+}
+
+
+#loginBox{
+    width: 270px;
+    background-color: green;
+    border: 1px black solid;
+    border-radius: 20px;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    text-align: center;
+    box-shadow: 5px 5px 5px;
+}
+#lgn{
+box-shadow: 1px 1px 1px;
+}
