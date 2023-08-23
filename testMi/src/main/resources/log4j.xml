@@ -15,6 +15,11 @@
 		<level value="info" />
 	</logger>
 	
+	<!-- 	TestController 컨트롤러 때문에 추가함 -->
+	<logger name="com.peisia.controller">
+		<level value="info" />
+	</logger>	
+	
 	<!-- 3rdparty Loggers -->
 	<logger name="org.springframework.core">
 		<level value="info" />
@@ -37,7 +42,8 @@
 		<priority value="warn" />
 		<appender-ref ref="console" />
 	</root>
-		<!-- 내가 추가한거 -->
+	
+	<!-- 내가 추가한거 -->
 	<logger name="jdbc.audit">
 		<level value="warn" />
 	</logger>
@@ -47,6 +53,7 @@
 	<logger name="jdbc.connection">
 		<level value="warn" />
 	</logger>	
+	
 	
 	
 </log4j:configuration>

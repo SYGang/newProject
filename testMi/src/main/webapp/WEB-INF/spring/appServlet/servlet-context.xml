@@ -21,7 +21,14 @@
 		<beans:property name="suffix" value=".jsp" />
 	</beans:bean>
 	
-	<context:component-scan base-package="com.peisia.spring" />
+<!-- 	이 아래 설정은 pj 생성 시 자동으로 설정된 것임. -->
+<!-- 	이것 때문에 해당 패키지의 홈 컨트롤러가 작동하고 헬로월드가 표시 되는 것임.  -->
+<!-- 	참고로 pj 생성 시에 기본 패키지를 com.peisia.spring.mi 라고 지정했지만 -->
+<!-- 	com.peisia.spring 까지만 인식해버리고 세번째 폴더 spring 을 톰캣 서버로 지정하는 등 -->
+	<context:component-scan base-package="com.peisia.spring.mi" />
+
+<!-- 	내가 따로 정한 컨트롤러용 패키지를 위해 아래 설정 추가했음	 -->
+	<context:component-scan base-package="com.peisia.spring.mi.controller" />
 	
 	
 	
